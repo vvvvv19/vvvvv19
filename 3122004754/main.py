@@ -30,7 +30,7 @@ def main():
     #综合两者的结果，通过加权将两种相似度结果结合起来，以获得综合相似度评分
     #这里Jaccard 相似度权重为 20%，余弦相似度权重为 80%
     all_score=0.2*jaccard_similarity+cosine_similarity_score*0.8
-    print(all_score)
+    print("查重率为:"+all_score)
     rw.write_result(output_file,all_score)
 
 #执行main函数
