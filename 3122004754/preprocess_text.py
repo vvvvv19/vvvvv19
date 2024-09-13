@@ -17,9 +17,6 @@ def preprocess_text(text):
     # 去除停用词和处理英文单词（去除英文标点）
     processed_words = []
     for word in words:
-        # 处理英文单词
-        if re.match(r'[a-zA-Z]+', word):
-            word = re.sub(f"[{string.punctuation}]", '', word)
         # 只保留非停用词且不为空的词
         if word.strip() and word not in stop_words:
             processed_words.append(word)
