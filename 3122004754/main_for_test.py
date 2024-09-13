@@ -23,3 +23,7 @@ def main(original_file,plagiarized_file,output_file):
     rw.write_result(output_file,all_score)
 
     return  all_score
+
+if __name__ == "__main__":
+    # 运行测试
+    print(main("orig.txt","orig_0.8_short.txt","textfile.txt"))
